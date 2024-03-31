@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" class="js-color-style" href="assets/css/colors/color-1.css">
+
+    <title>Responsive e-commerce website - Crypticalcoder</title>
+</head>
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <i class="bx bxs-shopping-bags nav__logo-icon"></i> Shopify
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link active-link">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="shop.html" class="nav__link">Shop</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">Blog</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="faq.html" class="nav__link">Faq's</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="bx bx-x"></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <div class="login__toggle" id="login-button">
+                    <i class="bx bx-user"></i>
+                </div>
+
+                <div class="nav__shop" id="cart-shop">
+                    <i class="bx bx-shopping-bag"></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="bx bx-grid-alt"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--=============== CART ===============-->
+    <div class="cart" id="cart">
+        <i class="bx bx-x cart__close" id="cart-close"></i>
+
+        <h2 class="cart__title-center">My Cart</h2>
+
+        <div class="cart__container">
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/cart-1.png" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Windbreaker</h3>
+                    <span class="cart__price">$12</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+
+                        <i class="bx bx-trash-alt cart__amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/cart-2.png" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Cardigan Hoodie</h3>
+                    <span class="cart__price">$16</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+
+                        <i class="bx bx-trash-alt cart__amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/cart-3.png" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Cartoon</h3>
+                    <span class="cart__price">$10</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+
+                        <i class="bx bx-trash-alt cart__amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="cart__prices">
+            <span class="cart__prices-item">3 item</span>
+            <span class="cart__prices-total">$38</span>
+        </div>
+    </div>
+
+    <!--=============== LOGIN ===============-->
+    <div class="login" id="login">
+        <i class="bx bx-x login__close" id="login-close"></i>
+
+        <h2 class="login__title-center">Login</h2>
+
+        <form action="" class="login__form grid">
+            <div class="login__content">
+                <label for="" class="login__label">Email</label>
+                <input type="email" class="login__input">
+            </div>
+
+            <div class="login__content">
+                <label for="" class="login__label">Password</label>
+                <input type="password" class="login__input">
+            </div>
+
+            <div>
+                <a href="#" class="button">Sign in</a>
+            </div>
+
+            <div>
+                <p class="signup">Not a member? <a href="registration.html">Sign up now</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home container">
+            <div class="swiper home-swiper">
+                <div class="swiper-wrapper">
+                    <!-- HOME SWIPER 1-->
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <img src="assets/img/slide-2.png" alt="" class="home__img">
+                                <div class="home__indicator"></div>
+
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">The "Cardigan"</h4>
+                                    <span class="home__details-subtitle">Woolen</span>
+                                </div>
+                            </div>
+
+                            <div class="home__data">
+                                <h3 class="home__subtitle">#1 TRENDING ITEM</h3>
+                                <h1 class="home__title">ORIGINAL <br> IS NEVER <br> FINISHED!!</h1>
+                                <p class="home__description">This is a place of hope, meaning and purpose. Visit and become a part of something bigger - a movement that is changing lives.</p>
+
+                                <div class="home__buttons">
+                                    <a href="details.html" class="button">Buy Now</a>
+                                    <a href="details.html" class="button--link button--flex">View Details <i class="bx bx-right-arrow-alt button__icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- HOME SWIPER 2-->
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <img src="assets/img/slide-3.png" alt="" class="home__img">
+                                <div class="home__indicator"></div>
+
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">Jqueezy</h4>
+                                    <span class="home__details-subtitle">Ski Suit</span>
+                                </div>
+                            </div>
+
+                            <div class="home__data">
+                                <h3 class="home__subtitle">#2 top Best duo</h3>
+                                <h1 class="home__title">FALL <br> WINTER <br> 2022</h1>
+                                <p class="home__description">A specialist label creating luxury essentials. Ethically crafted with an unwavering commitment to exceptional quality.</p>
+
+                                <div class="home__buttons">
+                                    <a href="details.html" class="button">Buy Now</a>
+                                    <a href="details.html" class="button--link button--flex">View Details <i class="bx bx-right-arrow-alt button__icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- HOME SWIPER 3-->
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <img src="assets/img/slide-1.png" alt="" class="home__img">
+                                <div class="home__indicator"></div>
+
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">Jurry</h4>
+                                    <span class="home__details-subtitle">Zipper</span>
+                                </div>
+                            </div>
+
+                            <div class="home__data">
+                                <h3 class="home__subtitle">#3 TRENDING ITEM</h3>
+                                <h1 class="home__title">SALE 20% <br> OFF ON  <br> EVERYTHING</h1>
+                                <p class="home__description">A specialist label creating luxury essentials. Ethically crafted with an unwavering commitment to exceptional quality.</p>
+
+                                <div class="home__buttons">
+                                    <a href="details.html" class="button">Buy Now</a>
+                                    <a href="details.html" class="button--link button--flex">View Details <i class="bx bx-right-arrow-alt button__icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!--=============== DISCOUNT ===============-->
+        <section class="discount section">
+            <div class="discount__container container grid">
+                <img src="assets/img/discount.png" alt="" class="discount__img">
+
+                <div class="discount__data">
+                    <h2 class="discount__title">50% Discount <br> On New Products</h2>
+                    <a href="#" class="button">Go to new</a>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== NEW ARRIVALS ===============-->
+        <section class="new section">
+            <h2 class="section__title">New Arrivals</h2>
+
+            <div class="new__container container">
+                <div class="swiper new-swiper">
+                    <div class="swiper-wrapper">
+                        <!--NEW CONTENT 1-->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">New</div>
+                            <img src="assets/img/new-1.png" alt="" class="new__img">
+                            <h3 class="new__title">Windbreaker Jacket</h3>
+                            <span class="new__subtitle">Accessory</span>
+
+                            <div class="new__prices">
+                                <span class="new__price">$14.99</span>
+                                <span class="new__discount">$29.99</span>
+                            </div>
+
+                            <a href="details.html" class="button new__button">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </a>
+                        </div>
+                        <!--NEW CONTENT 2-->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">New</div>
+                            <img src="assets/img/new-2.png" alt="" class="new__img">
+                            <h3 class="new__title">Air Jordan Zipper</h3>
+                            <span class="new__subtitle">Accessory</span>
+
+                            <div class="new__prices">
+                                <span class="new__price">$11.99</span>
+                                <span class="new__discount">$21.99</span>
+                            </div>
+
+                            <a href="details.html" class="button new__button">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </a>
+                        </div>
+                        <!--NEW CONTENT 3-->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">New</div>
+                            <img src="assets/img/new-3.png" alt="" class="new__img">
+                            <h3 class="new__title">Fur Jacket</h3>
+                            <span class="new__subtitle">Accessory</span>
+
+                            <div class="new__prices">
+                                <span class="new__price">$4.99</span>
+                                <span class="new__discount">$9.99</span>
+                            </div>
+
+                            <a href="details.html" class="button new__button">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </a>
+                        </div>
+                        <!--NEW CONTENT 4-->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">New</div>
+                            <img src="assets/img/new-4.png" alt="" class="new__img">
+                            <h3 class="new__title">Fleece Jacket</h3>
+                            <span class="new__subtitle">Accessory</span>
+
+                            <div class="new__prices">
+                                <span class="new__price">$24.99</span>
+                                <span class="new__discount">$44.99</span>
+                            </div>
+
+                            <a href="details.html" class="button new__button">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </a>
+                        </div>
+                        <!--NEW CONTENT 5-->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">New</div>
+                            <img src="assets/img/new-5.png" alt="" class="new__img">
+                            <h3 class="new__title">Nike Hoodie</h3>
+                            <span class="new__subtitle">Accessory</span>
+
+                            <div class="new__prices">
+                                <span class="new__price">$7.99</span>
+                                <span class="new__discount">$14.99</span>
+                            </div>
+
+                            <a href="details.html" class="button new__button">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </a>
+                        </div>
+                        <!--NEW CONTENT 6-->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">New</div>
+                            <img src="assets/img/new-6.png" alt="" class="new__img">
+                            <h3 class="new__title">Fleece Jacket</h3>
+                            <span class="new__subtitle">Accessory</span>
+
+                            <div class="new__prices">
+                                <span class="new__price">$5.99</span>
+                                <span class="new__discount">$12.99</span>
+                            </div>
+
+                            <a href="details.html" class="button new__button">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== STEPS ===============-->
+        <section class="steps section container">
+            <div class="steps__bg">
+                <h2 class="section__title">How to order products <br> from Shopify</h2>
+
+                <div class="steps__container grid">
+                    <!-- STEP CARD 1 -->
+                    <div class="steps__card">
+                        <div class="steps__card-number">01</div>
+                        <h3 class="steps__card-title">Choose Products</h3>
+                        <p class="steps__card-description">
+                            We have several varieties products you can choose from.
+                        </p>
+                    </div>
+                    <!-- STEP CARD 2 -->
+                    <div class="steps__card">
+                        <div class="steps__card-number">02</div>
+                        <h3 class="steps__card-title">Place an order</h3>
+                        <p class="steps__card-description">
+                            Once your order is set, we move to the next step which is the shipping.
+                        </p>
+                    </div>
+                    <!-- STEP CARD 3 -->
+                    <div class="steps__card">
+                        <div class="steps__card-number">03</div>
+                        <h3 class="steps__card-title">Get order delivered</h3>
+                        <p class="steps__card-description">
+                            Our delivery process is easy, you receive the order direct to your home.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== NEWSLETTER ===============-->
+        <section class="newsletter section">
+            <div class="newsletter__container container">
+                <h2 class="section__title">Our Newsletter</h2>
+                <p class="newsletter__description">
+                    Promotion new products and sales. Directly to your inbox
+                </p>
+
+                <form action="" class="newsletter__form">
+                    <input type="text" placeholder="Enter your email" class="newsletter__input">
+                    <button class="button">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <!-- FOOTER CONTENT 1 -->
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <i class="bx bxs-shopping-bags footer__logo-icon"></i> Shopify
+                </a>
+
+                <p class="footer__description">Enjoy the biggest sale <br> of your life.</p>
+
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="footer__social-link"><i class="bx bxl-instagram-alt"></i></a>
+                    <a href="#" class="footer__social-link"><i class="bx bxl-twitter"></i></a>
+                </div>
+            </div>
+            <!-- FOOTER CONTENT 2 -->
+            <div class="footer__content">
+                <h3 class="footer__title">About</h3>
+
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">About Us</a></li>
+                    <li><a href="#" class="footer__link">Customer Support</a></li>
+                    <li><a href="#" class="footer__link">Support Center</a></li>
+                </ul>
+            </div>
+            <!-- FOOTER CONTENT 3 -->
+            <div class="footer__content">
+                <h3 class="footer__title">Our Services</h3>
+
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Shop</a></li>
+                    <li><a href="#" class="footer__link">Discounts</a></li>
+                    <li><a href="#" class="footer__link">Shipping mode</a></li>
+                </ul>
+            </div>
+            <!-- FOOTER CONTENT 4 -->
+            <div class="footer__content">
+                <h3 class="footer__title">Our Company</h3>
+
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Register</a></li>
+                    <li><a href="#" class="footer__link">Contact Us</a></li>
+                    <li><a href="#" class="footer__link">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <span class="footer__copy">&#169; Crypticalcoder. All rights reserved</span>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+    </a>
+
+    <!--=============== STYLE SWITCHER ===============-->
+    <div class="style__switcher">
+        <div class="style__switcher-toggler s__icon">
+            <i class="bx bxs-cog bx-spin"></i>
+        </div>
+
+        <h4>Theme Colors</h4>
+
+        <div class="theme__colors js-theme-colors">
+            <button type="button"  data-js-theme-color="color-1" class="js-theme-color-item theme__button color-1"><i class="bx bx-check"></i></button>
+            <button type="button"  data-js-theme-color="color-2" class="js-theme-color-item theme__button color-2"><i class="bx bx-check"></i></button>
+            <button type="button"  data-js-theme-color="color-3" class="js-theme-color-item theme__button color-3"><i class="bx bx-check"></i></button>
+            <button type="button"  data-js-theme-color="color-4" class="js-theme-color-item theme__button color-4"><i class="bx bx-check"></i></button>
+            <button type="button"  data-js-theme-color="color-5" class="js-theme-color-item theme__button color-5"><i class="bx bx-check"></i></button>
+        </div>
+    </div>
+    
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
